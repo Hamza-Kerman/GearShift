@@ -283,8 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  parryDuration: 2
-  parryCooldown: 0.5
+  parryDuration: 1
+  parryCooldown: 0.1
   parryVisual: {fileID: 10721838}
   isParrying: 0
 --- !u!50 &288728636
