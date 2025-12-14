@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+
     public float lifetime = 5f; // Merminin ömrü
 
     void Start()
@@ -27,9 +29,10 @@ public class Projectile : MonoBehaviour
                 }
                 else
                 {
+
                     // FAILED PARRY - TAKE DAMAGE
                     Debug.Log("Player Hit! Taking Damage...");
-                    // Add damage logic here (e.g., playerScript.TakeDamage(1));
+                    Player.Instance.TakeDamage(10);
 
                     Destroy(gameObject);
                 }
