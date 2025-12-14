@@ -285,7 +285,7 @@ MonoBehaviour:
   maxGearBar: 100
   decayRate: 10
   hitIncrease: 20
-  blockIncrease: 10
+  blockIncrease: 100
 --- !u!4 &276745730
 Transform:
   m_ObjectHideFlags: 0
