@@ -4,6 +4,9 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
 
+
+    public static event Action DamageBlocked;
+
     public float lifetime = 5f; // Merminin ömrü
 
     void Start()
@@ -26,6 +29,7 @@ public class Projectile : MonoBehaviour
                     // SUCCESSFUL PARRY
                     playerScript.ShowSuccessfulParry();
                     Destroy(gameObject); // Destroy projectile, no damage
+                    DamageBlocked?.Invoke();
                 }
                 else
                 {
